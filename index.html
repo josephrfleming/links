@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Joe F</title>
-      <meta charset="utf-8">
-      <meta name="author>" content="Joseph Fleming">
+<head>
+  <title>Joe F</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Joseph Fleming">
 
-  <head>
+  <style>
+    body {
+      background-color: #004643;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 0;
+    }
 
-  <body>
-    <img src="/thumbnails/AdobeStock_423808823.jpeg" alt="Joe Fleming's headshot">
-  </body>
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 64px; /* Adjusted for a circular appearance */
+      margin-bottom: 20px; /* Added space below the image */
+    }
 
+    .name {
+      color: #fffffe;
+      font-size: 24px;
+      margin-bottom: 20px; /* Added space below the name */
+    }
+
+    .social-icons,
+    .link {
+      margin: 10px 0; /* Added some vertical spacing between links */
+      background-color: #f9bc60;
+      border-radius: 20px; /* Rounded corners for link boxes */
+      width: 90%; /* Adjust the width of links container */
+      max-width: 600px; /* Maximum width */
+      overflow: hidden; /* Ensures no content spills out */
+    }
+
+    .social-icons a,
+    .link a {
+      display: block; /* Make links fill their containers */
+      padding: 15px; /* Add some padding around the links */
+      color: #001e1d;
+      text-decoration: none;
+      font-weight: bold; /* Make the text bold */
+    }
+
+    .social-icons a:not(:last-child),
+    .link:not(:last-child) {
+      border-bottom: 1px solid #001e1d; /* Add a separator between the links */
+    }
+
+    .link img {
+      width: 100%; /* Ensure images fill their containers */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <img src="/thumbnails/AdobeStock_423808823.jpeg" alt="Joseph Fleming's headshot" class="banner-image">
+  </div>
+
+  <div class="name">Joseph Fleming</div>
+
+  <div class="social-icons">
+    <a href="https://github.com/josephrfleming" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://twitter.com/" target="_blank">Twitter</a>
+  </div>
+
+  <div class="link">
+    <a target="_blank" href="http://paulgraham.com/startupideas.html">
+      <img src="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png">
+      How to Get Startup Ideas — Paul Graham
+    </a>
+  </div>
+
+  <div class="link">
+    <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
+      <img src="/thumbnails/typography.jpg">
+      Typography in ten minutes — Matthew Butterick
+    </a>
+  </div>
+
+  <div class="link">
+    <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">
+      <img src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg">
+      A Life-Saving Checklist — The New Yorker
+    </a>
+  </div>
+  <!-- Etc, for as many links as you want -->
+</body>
 </html>
